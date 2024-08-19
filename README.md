@@ -22,7 +22,7 @@ Most of the generated poems would not pass as one written by human as they break
 
 殘雞一食花，參枝獨宿鳴。
 
-but occasionally it produces poems that are good enough to fool me, e.g.,
+but occasionally it produces poems that can pass a (linient) human grading, e.g.,
 
 贈韋郎中西山         (machine generated, pass)
 
@@ -36,6 +36,7 @@ but occasionally it produces poems that are good enough to fool me, e.g.,
 
 
 to be uploaded:
+
 /without_pair_encodings/nano_gpt_tang_poems_train.ipynb
 /without_pair_encodings/nano_gpt_tang_poems_inference.ipynb
 /without_pair_encodings/___.pt
