@@ -9,16 +9,16 @@ Data are tagged using special symols '<' ,'>'  to delimit the beginning, ending 
 
 With vocabulary size around 8000 (fully randomized scenario gives cross entropy ~ 9.0),  at best I could achieve a validation loss of 4.73 (cross entropy) with a model of 7M parameters, after which point increasing model size no longer reduces the best loss. 
 
-Most of the generated poems would not pass as one written by human as they break simple rules of poem writing, e.g.:
-        古意        (machine generated, fail)
+Most of the generated poems would not pass as one written by human as they break simple rules of poem writing, e.g. (machine generated, fail):
+        <古意|        
 新蟬忽淒聲，月滿掌底鳴。
 去年今日光，巢起天邊生。
 今日舍農者，少光作兒兄。
-殘雞一食花，參枝獨宿鳴。
+殘雞一食花，參枝獨宿鳴。>
 
-but occasionally it produces poems that are good enough to fool me, e.g.:
-    贈韋郎中西山     (machine generated, pass)
+but occasionally it produces poems that are good enough to fool me, e.g. (machine generated, pass):
+    <贈韋郎中西山|     
 北風條葉落，滿眼天涯晴。
 水木泊何處，山鐘發故城。
 秋琴不倦臥，落筆忽忘形。
-不道千山夢，何人知酒平。
+不道千山夢，何人知酒平。>
