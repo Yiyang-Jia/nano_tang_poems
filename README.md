@@ -22,7 +22,7 @@ Most of the generated poems would not pass as one written by human as they break
 
 殘雞一食花，參枝獨宿鳴。
 
-but occasionally it produces poems that can pass a (linient) human grading, e.g.,
+but occasionally it produces poems that can pass a (lenient) human grading, e.g.,
 
 贈韋郎中西山         (machine generated, pass)
 
