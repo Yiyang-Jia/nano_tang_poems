@@ -38,11 +38,17 @@ but occasionally it produces poems that can pass a (linient) human grading, e.g.
 to be uploaded:
 
 /without_pair_encodings/nano_gpt_tang_poems_train.ipynb
+
 /without_pair_encodings/nano_gpt_tang_poems_inference.ipynb
+
 /without_pair_encodings/___.pt
 
 /with_pair_encodings/nano_gpt_tang_poems_BPE_train.ipynb
+
 /with_pair_encodings/nano_gpt_tang_poems_BPE_inference.ipynb
+
 /with_pair_encodings/nano_gpt_tang_poems_BPE_inference.ipynb
+
 /with_pair_encodings/itos_BPE.pkl
+
 /with_pair_encodings/___.pt
