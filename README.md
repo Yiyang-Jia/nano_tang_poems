@@ -33,3 +33,15 @@ but occasionally it produces poems that are good enough to fool me, e.g.,
 秋琴不倦臥，落筆忽忘形。
 
 不道千山夢，何人知酒平。
+
+
+to be uploaded:
+/without_pair_encodings/nano_gpt_tang_poems_train.ipynb
+/without_pair_encodings/nano_gpt_tang_poems_inference.ipynb
+/without_pair_encodings/___.pt
+
+/with_pair_encodings/nano_gpt_tang_poems_BPE_train.ipynb
+/with_pair_encodings/nano_gpt_tang_poems_BPE_inference.ipynb
+/with_pair_encodings/nano_gpt_tang_poems_BPE_inference.ipynb
+/with_pair_encodings/itos_BPE.pkl
+/with_pair_encodings/___.pt
