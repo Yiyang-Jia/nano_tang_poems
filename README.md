@@ -1,7 +1,7 @@
 # nano_tang_poems
 A tiny transformer model trained on Quan Tang Shi (全唐诗, a complete collection of poems of Tang dynasty),  in one Jupter notebook.
 Use m.generate_one_poem() to generate poems, where m is a model loaded from one of the .pt files.
-Basic structure of the codes follow the nano GPT and tokenization YouTube tutorials of Andrei Karpathy.
+Basic structure of the codes follow the nano GPT and tokenization YouTube tutorials of Andrei Karpathy. (A few differences in the Byte Pair Encoding codes to deal with Chinese charaters).
 
 There are around 3.5 million Chinese characters in the train + validation data set (not shown in this repo).
 Data are tagged using special symols '<' ,'>'  to delimit the beginning, ending of a poem,   and '|' to delimit the separation between a poem title and the corresponding poem body.  A snippet of two adjacent poems in the train data set looks like 
