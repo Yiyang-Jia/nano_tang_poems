@@ -37,9 +37,6 @@ but occasionally it produces poems that can pass a (lenient) human grading, e.g.
 
 to be uploaded:
 
-/without_pair_encodings/nano_gpt_tang_poems_train.ipynb
-
-/without_pair_encodings/nano_gpt_tang_poems_inference.ipynb
 
 /without_pair_encodings/___.pt
 
