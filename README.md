@@ -13,27 +13,27 @@ With vocabulary size around 8000 (fully randomized scenario gives cross entropy 
 # Example outputs
 Most of the generated poems would not pass as one written by human as they break simple rules of poem writing, e.g.,
 
-古意                 (machine generated, fail)
+        古意                 (machine generated, fail)
+                
+        新蟬忽淒聲，月滿掌底鳴。
         
-新蟬忽淒聲，月滿掌底鳴。
-
-去年今日光，巢起天邊生。
-
-今日舍農者，少光作兒兄。
-
-殘雞一食花，參枝獨宿鳴。
+        去年今日光，巢起天邊生。
+        
+        今日舍農者，少光作兒兄。
+        
+        殘雞一食花，參枝獨宿鳴。
 
 but occasionally it produces poems that can pass a (lenient) human grading (me), e.g.,
 
-贈韋郎中西山         (machine generated, pass)
-
-北風條葉落，滿眼天涯晴。
-
-水木泊何處，山鐘發故城。
-
-秋琴不倦臥，落筆忽忘形。
-
-不道千山夢，何人知酒平。
+        贈韋郎中西山         (machine generated, pass)
+        
+        北風條葉落，滿眼天涯晴。
+        
+        水木泊何處，山鐘發故城。
+        
+        秋琴不倦臥，落筆忽忘形。
+        
+        不道千山夢，何人知酒平。
 
 # Order of learning
 I observed the following order of learning (among the relatively successful generated examples by human grading), i.e., what features of the training data are consecutively picked up as the model gets larger and loss gets smaller:
