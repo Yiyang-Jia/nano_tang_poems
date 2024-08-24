@@ -1,10 +1,10 @@
 # nano_tang_poems
-A tiny transformer model trained on Quan Tang Shi (全唐诗, a complete collection of poems of Tang dynasty),  in one Jupter notebook.
+A tiny transformer model trained on Quan Tang Shi (全唐诗, a complete collection of poems of Tang dynasty),  in one Jupyter notebook.
 Use m.generate_one_poem() to generate poems, where m is a model loaded from one of the .pt files.
-Basic structure of the codes follow the nano GPT and tokenization YouTube tutorials of Andrei Karpathy. (A few differences in the Byte Pair Encoding codes to deal with Chinese charaters).
+Basic structure of the codes follow the nano GPT and tokenization YouTube tutorials of Andrei Karpathy. (A few differences in the Byte Pair Encoding codes to deal with Chinese characters).
 
 There are 42889 poems (around 3.5 million Chinese characters) in the train + validation data set (not shown in this repo).
-Data are tagged using special symols '<' ,'>'  to delimit the beginning, ending of a poem,   and '|' to delimit the separation between a poem title and the corresponding poem body.  A snippet of two adjacent poems in the train data set looks like (by Li Shimin)
+Data are tagged using special symbols '<' ,'>'  to delimit the beginning, ending of a poem,   and '|' to delimit the separation between a poem title and the corresponding poem body.  A snippet of two adjacent poems in the train data set looks like (by Li Shimin)
 
 <出獵|楚王雲夢澤，漢帝長楊宮。豈若因農暇，閱武出轘嵩。三驅陳銳卒，七萃列材雄。寒野霜氛白，平原燒火紅。雕戈夏服箭，羽騎綠沉弓。怖獸潛幽壑，驚禽散翠空。長煙晦落景，灌木振嚴風。所為除民瘼，非是悅林叢。><冬狩|烈烈寒風起，慘慘飛雲浮。霜濃凝廣隰，冰厚結清流。金鞍移上苑，玉勒騁平疇。旌旗四望合，罝羅一面求。楚踣爭兕殪，秦亡角鹿愁。獸忙投密樹，鴻驚起礫洲。騎斂原塵靜，戈回嶺日收。心非洛汭逸，意在渭濱遊。禽荒非所樂，撫轡更招憂。> 
 
@@ -48,7 +48,7 @@ I observed the following order of learning (among the relatively successful gene
 
 5)  The last and the most difficult thing to learn, is for the meaning of the title to match the meaning of the poem body. And it still does not do too well after the optimal loss is achieved.  However up to stage 2) there is absolutely no such matching observed.
 
-6) One thing it never seems to have learnt is a particular rule for rhyme:  one should not use two identical characters to rythme,  and it is preferable not to use two different characters with the same prounciations to ryhme (the latter is not a strict rule, see the snippet of the train data set I gave, where "宫" and “弓” are used to rhyme ).   This is reflected in the failed example I showed above (the character 鳴 appeared twice at the end of two verses).
+6) One thing it never seems to have learned is a particular rule for rhyme:  one should not use two identical characters to rhyme,  and it is preferable not to use two different characters with the same pronunciations to rhyme (the latter is not a strict rule, see the snippet of the train data set I gave, where "宫" and “弓” are used to rhyme ).   This is reflected in the failed example I showed above (the character 鳴 appeared twice at the end of two verses).
 
 # Causal masking contains positional information
 
