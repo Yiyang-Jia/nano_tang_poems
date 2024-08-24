@@ -38,13 +38,13 @@ but occasionally it produces poems that can pass a (lenient) human grading (me),
 # Order of learning
 I observed the following order of learning in the relatively successful generated output by human grading, i.e., what features of the training data are consecutively picked up as the model gets larger and loss gets smaller:
 
-1) it learns the basic length pattern of poem lines, i.e.,  typically each line has two verses with equal number of characters.
+1) It learns the basic length pattern of poem lines, i.e.,  typically each line has two verses with equal number of characters.
 
-2) it learns the distinction between verbs and nouns.  Actully this is picked up around the same time as 1),  I couldn't really tell which happened first.
+2) It learns the distinction between verbs and nouns.  Actully this is picked up around the same time as 1),  I couldn't really tell which happened first.
 
-3) it learns how to rhyme, namely it picks up phonetic information in the Chinese characters. 
+3) It learns how to rhyme, namely it picks up phonetic information in the Chinese characters. 
 
-4)  the meaning and imageries in the poems start to make sense. This happens around the same time as 3), I couldn't really tell which happend first.
+4)  The meaning and imageries in the poem bodies start to make sense. This happens around the same time as 3), I couldn't really tell which happend first.
 
 5)  The last and the most difficult thing to learn, is for the meaning of the title to match the meaning of the poem body. And it still does not do too well after the optimal loss is achieved.  However if we are at stage 1) there is absolutely no such matching observed.
 
