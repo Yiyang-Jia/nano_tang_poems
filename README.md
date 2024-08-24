@@ -55,7 +55,7 @@ I observed the following order of learning (among the relatively successful gene
 Removing positional encoding layer still results in reasonable output,  thought significantly reducing efficiency.  Without positional encoding layer, I can achieve cross entropy loss of 4.65 with 8.1M parameters (compare with 4.53 with 6.5M parameters when positional encoding is present).  The following is one of the higher-quality example output, which still would not pass human grading:
 
 
-     初山林宿，故鄉作      (machine generated, fail)
+     初山林宿，故鄉作      (machine generated without the positional encoding layer, fail)
      
      忽想雞林客，披襟煙景閑。
      
