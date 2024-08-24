@@ -23,7 +23,7 @@ Most of the generated poems would not pass as one written by human as they break
         
         殘雞一食花，參枝獨宿鳴。
 
-but occasionally it produces poems that can pass a (lenient) human grading (me), e.g.,
+but occasionally it produces poems that can pass a (lenient) human grading (me). Here is one of the higher quality examples:
 
              贈韋郎中西山         (machine generated, pass)
         
@@ -40,7 +40,7 @@ I observed the following order of learning (among the relatively successful gene
 
 1) It learns the basic length pattern of poem lines, i.e.,  typically each line has two verses with equal number of characters.
 
-2) It learns the distinction between verbs and nouns.  Actully this is picked up around the same time as 1),  I couldn't really tell which happened first.
+2) It learns grammar (which is simple for poems), the distinction between verbs and nouns etc.  Actully this is picked up around the same time as 1),  I couldn't really tell which happened first.
 
 3) It learns how to rhyme, namely it picks up phonetic information in the Chinese characters. 
 
@@ -48,4 +48,25 @@ I observed the following order of learning (among the relatively successful gene
 
 5)  The last and the most difficult thing to learn, is for the meaning of the title to match the meaning of the poem body. And it still does not do too well after the optimal loss is achieved.  However up to stage 2) there is absolutely no such matching observed.
 
-6) One thing it never seems to have learnt is a particular rule for rhyme:  one should not use two identical characters to rythme,  and it is preferable not to use two different characters with the same prounciations to ryhme (the latter is not a strict rule, see the snippet of the train data set I gave, where "宫" and “弓” are used to rhyme ).   This is reflected in the failed example I showed above (the character 鳴 appeared twice at the end of two verses). 
+6) One thing it never seems to have learnt is a particular rule for rhyme:  one should not use two identical characters to rythme,  and it is preferable not to use two different characters with the same prounciations to ryhme (the latter is not a strict rule, see the snippet of the train data set I gave, where "宫" and “弓” are used to rhyme ).   This is reflected in the failed example I showed above (the character 鳴 appeared twice at the end of two verses).
+
+# Causal masking contains positional information
+
+Removing positional encoding layer still results in reasonable output,  thought significantly reducing efficiency.  Without positional encoding layer, I can achieve cross entropy loss of 4.65 with 8.1M parameters (compare with 4.53 with 6.5M parameters when positional encoding is present).  The following is one of the higher-quality example output, which still would not pass human grading:
+
+
+   初山林宿，故鄉作      (machine generated, fail)
+   
+   忽想雞林客，披襟煙景閑。
+   
+   悟談人罕玩，望客柳陰山。
+   
+   亂木長風起，餘花遠樹還。
+   
+   雲齊惹煙影，泉倒落花閑。
+   
+   歸路何時返，寒江若不關。
+
+In this example, it is clear it learns all features of 1) to 5) discussed above,  just a little worse on each. 
+
+If causal masking is also removed, I would get complete gibberish.
