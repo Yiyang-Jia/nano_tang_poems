@@ -36,7 +36,7 @@ but occasionally it produces poems that can pass a (lenient) human grading (me),
 不道千山夢，何人知酒平。
 
 # Order of learning
-I observed the following order of learning in the relatively successful generated output by human grading, i.e., what features of the training data are consecutively picked up as the model gets larger and loss gets smaller:
+I observed the following order of learning (among the relatively successful generated examples by human grading), i.e., what features of the training data are consecutively picked up as the model gets larger and loss gets smaller:
 
 1) It learns the basic length pattern of poem lines, i.e.,  typically each line has two verses with equal number of characters.
 
