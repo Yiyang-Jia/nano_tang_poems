@@ -48,4 +48,4 @@ I observed the following order of learning (among the relatively successful gene
 
 5)  The last and the most difficult thing to learn, is for the meaning of the title to match the meaning of the poem body. And it still does not do too well after the optimal loss is achieved.  However if we are at stage 1) there is absolutely no such matching observed.
 
-6) One thing it never seems to have learnt is a particular rule for rhyme:  one should neither use two same characters, nor use two different characters with the same prounciations to ryhme.   This is refelected in the failed example I showed earlier. 
+6) One thing it never seems to have learnt is a particular rule for rhyme:  one should not use two identical characters to rythme,  and it is preferable not to use two different characters with the same prounciations to ryhme (the latter is not a strict rule, see the snippet of the train data set I gave, where "宫" and “弓” are used to rhyme ).   This is refelected in the failed example I showed earlier. 
