@@ -10,6 +10,7 @@ Data are tagged using special symols '<' ,'>'  to delimit the beginning, ending 
 
 With vocabulary size around 8000 (fully randomized scenario gives cross entropy ~ 9.0),  at best I could achieve a validation loss of 4.53 (cross entropy). The smallest model that achieves this loss has 6.5M parameters, and  increasing model size no longer seems to reduce the optimal loss. 
 
+# Example outputs
 Most of the generated poems would not pass as one written by human as they break simple rules of poem writing, e.g.,
 
 古意                 (machine generated, fail)
@@ -22,7 +23,7 @@ Most of the generated poems would not pass as one written by human as they break
 
 殘雞一食花，參枝獨宿鳴。
 
-but occasionally it produces poems that can pass a (lenient) human grading, e.g.,
+but occasionally it produces poems that can pass a (lenient) human grading (me), e.g.,
 
 贈韋郎中西山         (machine generated, pass)
 
@@ -34,18 +35,17 @@ but occasionally it produces poems that can pass a (lenient) human grading, e.g.
 
 不道千山夢，何人知酒平。
 
+# Order of learning
+I observed the following order of learning in the relatively successful generated output by human grading, i.e., what features of the training data are consecutively picked up as the model gets larger and loss gets smaller:
 
-to be uploaded:
+1) it learns the basic length pattern of poem lines, i.e.,  typically each line has two verses with equal number of characters.
 
+2) it learns the distinction between verbs and nouns.  Actully this is picked up around the same time as 1),  I couldn't really tell which happened first.
 
-/without_pair_encodings/___.pt
+3) it learns how to rhyme, namely it picks up phonetic information in the Chinese characters. 
 
-/with_pair_encodings/nano_gpt_tang_poems_BPE_train.ipynb
+4)  the meaning and imageries in the poems start to make sense. This happens around the same time as 3), I couldn't really tell which happend first.
 
-/with_pair_encodings/nano_gpt_tang_poems_BPE_inference.ipynb
+5)  The last and the most difficult thing to learn, is for the meaning of the title to match the meaning of the poem body. And it still does not do too well after the optimal loss is achieved.  However if we are at stage 1) there is absolutely no such matching observed.
 
-/with_pair_encodings/nano_gpt_tang_poems_BPE_inference.ipynb
-
-/with_pair_encodings/itos_BPE.pkl
-
-/with_pair_encodings/___.pt
+6) One thing it never seems to have learnt is a particular rule for rhyme:  one should neither use two same characters, nor use two different characters with the same prounciations to ryhme.   This is refelected in the failed example I showed earlier.
