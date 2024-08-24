@@ -55,17 +55,17 @@ I observed the following order of learning (among the relatively successful gene
 Removing positional encoding layer still results in reasonable output,  thought significantly reducing efficiency.  Without positional encoding layer, I can achieve cross entropy loss of 4.65 with 8.1M parameters (compare with 4.53 with 6.5M parameters when positional encoding is present).  The following is one of the higher-quality example output, which still would not pass human grading:
 
 
-   初山林宿，故鄉作      (machine generated, fail)
-   
-   忽想雞林客，披襟煙景閑。
-   
-   悟談人罕玩，望客柳陰山。
-   
-   亂木長風起，餘花遠樹還。
-   
-   雲齊惹煙影，泉倒落花閑。
-   
-   歸路何時返，寒江若不關。
+     初山林宿，故鄉作      (machine generated, fail)
+     
+     忽想雞林客，披襟煙景閑。
+     
+     悟談人罕玩，望客柳陰山。
+     
+     亂木長風起，餘花遠樹還。
+     
+     雲齊惹煙影，泉倒落花閑。
+     
+     歸路何時返，寒江若不關。
 
 In this example, it is clear it learns all features of 1) to 5) discussed above,  just a little worse on each. 
 
