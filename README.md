@@ -46,6 +46,6 @@ I observed the following order of learning (among the relatively successful gene
 
 4)  The meaning and imageries in the poem bodies start to make sense. This happens around the same time as 3), I couldn't really tell which happend first.
 
-5)  The last and the most difficult thing to learn, is for the meaning of the title to match the meaning of the poem body. And it still does not do too well after the optimal loss is achieved.  However if we are at stage 1) there is absolutely no such matching observed.
+5)  The last and the most difficult thing to learn, is for the meaning of the title to match the meaning of the poem body. And it still does not do too well after the optimal loss is achieved.  However if up to stage 2) there is absolutely no such matching observed.
 
 6) One thing it never seems to have learnt is a particular rule for rhyme:  one should not use two identical characters to rythme,  and it is preferable not to use two different characters with the same prounciations to ryhme (the latter is not a strict rule, see the snippet of the train data set I gave, where "宫" and “弓” are used to rhyme ).   This is reflected in the failed example I showed above (the character 鳴 appeared twice at the end of two verses). 
