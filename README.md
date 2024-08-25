@@ -13,7 +13,7 @@ With vocabulary size around 8000 (fully randomized scenario gives cross entropy 
 # Example outputs
 Most of the generated poems would not pass as one written by human as they break simple rules of poem writing, e.g.,
 
-                古意                 (machine generated, fail)
+                古意                 (machine generated, fail by human grading)
                 
         新蟬忽淒聲，月滿掌底鳴。
         
@@ -25,7 +25,7 @@ Most of the generated poems would not pass as one written by human as they break
 
 but occasionally it produces poems that can pass a (lenient) human grading (me). Here is one of the higher quality examples:
 
-             贈韋郎中西山         (machine generated, pass)
+             贈韋郎中西山         (machine generated, pass by human grading)
         
         北風條葉落，滿眼天涯晴。
         
@@ -55,7 +55,7 @@ I observed the following order of learning (among the relatively successful gene
 Removing positional encoding layer still results in reasonable output,  thought significantly reducing efficiency.  Without any positional encoding layer, I can achieve optimal cross entropy loss of 4.65 with 8.1M parameters (compare with 4.53 with 6.5M parameters when positional encoding is present).  The following is one of the higher-quality example output, which still would not pass human grading:
 
 
-     初山林宿，故鄉作      (machine generated without the positional encoding layer, fail)
+     初山林宿，故鄉作      (machine generated without the positional encoding layer, fail by human grading)
      
      忽想雞林客，披襟煙景閑。
      
