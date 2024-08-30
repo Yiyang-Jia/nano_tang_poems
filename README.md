@@ -50,9 +50,9 @@ I observed the following order of learning (among the relatively successful gene
 
 6) One thing it never seems to have learned is a particular rule for rhyme:  one should not use two identical characters to rhyme,  and it is preferable not to use two different characters with the same pronunciations to rhyme (the latter is not a strict rule, see the snippet of the train data set I gave, where "宫" and “弓” are used to rhyme ).   This is reflected in the failed example I showed above (the character 鳴 appeared twice at the end of two verses).
 
-# Causal masking contains positional information
+# Causal attention contains positional information
 
-Removing positional encoding layer still results in reasonable output,  thought significantly reducing efficiency.  Without any positional encoding layer, I can achieve optimal cross entropy loss of 4.65 with 8.1M parameters (compare with 4.53 with 6.5M parameters when positional encoding is present).  The following is one of the higher-quality example output, which still would not pass human grading:
+Removing positional encoding layer still results in reasonable output,  though significantly reducing efficiency.  Without any positional encoding layer, I can achieve optimal cross entropy loss of 4.65 with 8.1M parameters (compare with 4.53 with 6.5M parameters when positional encoding is present).  The following is one of the higher-quality example output, which still would not pass human grading:
 
 
      初山林宿，故鄉作      (machine generated without the positional encoding layer, fail by human grading)
