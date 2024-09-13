@@ -96,6 +96,8 @@ Removing positional encoding layer still results in reasonable output,  though s
      
      歸路何時返，寒江若不關。
 
+I did not include a tranlation for this one,  the first two lines really don't make sense other than being grammatically correct.
+
 In this example, it is clear it learns all features of 1) to 5) discussed above,  just a little worse on each. 
 
 If causal masking is also removed, I would get complete gibberish.
