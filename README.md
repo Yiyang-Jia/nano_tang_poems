@@ -8,7 +8,7 @@ Data are tagged using special symbols '<' ,'>'  to delimit the beginning, ending
 
 <出獵|楚王雲夢澤，漢帝長楊宮。豈若因農暇，閱武出轘嵩。三驅陳銳卒，七萃列材雄。寒野霜氛白，平原燒火紅。雕戈夏服箭，羽騎綠沉弓。怖獸潛幽壑，驚禽散翠空。長煙晦落景，灌木振嚴風。所為除民瘼，非是悅林叢。><冬狩|烈烈寒風起，慘慘飛雲浮。霜濃凝廣隰，冰厚結清流。金鞍移上苑，玉勒騁平疇。旌旗四望合，罝羅一面求。楚踣爭兕殪，秦亡角鹿愁。獸忙投密樹，鴻驚起礫洲。騎斂原塵靜，戈回嶺日收。心非洛汭逸，意在渭濱遊。禽荒非所樂，撫轡更招憂。> 
 
-With vocabulary size around 8000 (fully randomized scenario gives cross entropy ~ 9.0),  at best I could achieve a validation loss of 4.53 (cross entropy). The smallest model that achieves this loss has 6.5M parameters, and  increasing model size no longer seems to reduce the optimal loss. Models without pair encodings perform the best.
+With vocabulary size around 8000 (fully randomized scenario gives cross entropy ~ 9.0),  at best I could achieve a validation loss of 4.53 (cross entropy). The smallest model that achieves this loss has 6.5M parameters, and  increasing model size no longer seems to reduce the optimal loss. Models without pair encodings perform the best on this dataset.
 
 # Example outputs
 Most of the generated poems would not pass as one written by human as they break simple rules of poem writing, e.g.,
