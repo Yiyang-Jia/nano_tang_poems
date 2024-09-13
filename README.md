@@ -22,6 +22,21 @@ Most of the generated poems would not pass as one written by human as they break
         今日舍農者，少光作兒兄。
         
         殘雞一食花，參枝獨宿鳴。
+        
+          
+          Ancient Sentiment                            (tranlated from above by chatGPT4)
+
+    The new cicadas suddenly cry with sorrowful sounds,
+    Under the full moon, they chirp in my palm.
+    
+    Last year, on this day, the sunlight shone,
+    Birds took flight, building nests at heaven’s edge.
+    
+    Today, the farmers abandon their fields,
+    Children have grown up, becoming like brothers.
+    
+    A lone rooster pecks at flowers for food,
+    While a solitary cicada sings from a branch at dusk.
 
 but occasionally it produces poems that can pass a (lenient) human grading (me). Here is one of the higher quality examples:
 
@@ -35,6 +50,20 @@ but occasionally it produces poems that can pass a (lenient) human grading (me).
         
         不道千山夢，何人知酒平。
 
+    A Gift to Director Wei at Xishan                     (tranlated from above by chatGPT4)
+    
+    The north wind shakes the leaves, they fall,
+    Clear skies stretch as far as the eye can see.
+    
+    Where do water and trees come to rest?
+    The sound of bells from the ancient city echoes.
+    
+    In autumn, my qin (zither) accompanies me, never tiring in repose,
+    I write, forgetting all in a moment of inspiration.
+    
+    Though I don’t speak of dreams spanning a thousand mountains,
+    Who can understand the calm I find in wine?
+    
 # Order of learning
 I observed the following order of learning (among the relatively successful generated examples by human grading), i.e., what features of the training data are consecutively picked up as the model gets larger and loss gets smaller:
 
