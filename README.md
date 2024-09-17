@@ -77,7 +77,9 @@ I observed the following order of learning (among the relatively successful gene
 
 5)  The last and the most difficult thing to learn, is for the meaning of the title to match the meaning of the poem body. And it still does not do too well after the optimal loss is achieved.  However up to stage 2) there is absolutely no such matching observed.
 
-6) One thing it never seems to have learned is a particular rule for rhyme:  one should not use two identical characters to rhyme,  and it is preferable not to use two different characters with the same pronunciations to rhyme (the latter is not a strict rule, see the snippet of the train data set I gave, where "宫" and “弓” are used to rhyme ).   This is reflected in the failed example I showed above (the character 鳴 appeared twice at the end of two verses).
+6) One thing it never seems to have learned is a particular rule for rhyme:  one should not use two identical characters to rhyme,  and it is preferable not to use two different characters with the same pronunciations to rhyme (the latter is not a strict rule, see the snippet of the train data set I gave, where "宫" and “弓” are used to rhyme ).   This is reflected in the failed example I showed above (the character 鳴 appeared twice at the end of two verses).  
+   However,  I do notice this is not learnt very well even in large models like chatGPT4, which makes similar mistakes from time to time.
+
 
 # Causal attention contains positional information
 
